@@ -115,7 +115,7 @@ main {
 /* TAGLINE & PORTRAIT */
 
 .tagline {
-    padding: 20px 0px;
+    padding: 20px 5px;
     background-color: hsl(208, 3%, 19%);
     border-radius: 10px 10px 0px 0px;
     text-align: center;
@@ -222,10 +222,15 @@ footer p.contact-tagline {
 }
 
 /* MOBILE ADJUSTMENTS */
-@media only screen and (max-width: 900px) {
-    
-
+@media screen and (max-width: 900px) {
     .services-container {
         grid-template: 1fr 1fr 1fr 1fr / 1fr;
+    }
+}
+
+@media screen and (max-device-width: 900px) {
+    .services-container {
+        grid-template: 1fr 1fr 1fr 1fr / 1fr;
+        grid-gap: 40px;
     }
 }

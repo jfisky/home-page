@@ -1,0 +1,220 @@
+
+/* UNIVERSAL STYLING */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;;
+}
+
+body {
+    margin: 0px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: #eeeeee;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+/* HEADER */
+
+header {
+    background-color: hsl(208, 3%, 19%);
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+}
+
+h1 {
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 60px;
+    color: hsl(208, 54%, 72%); 
+    width: 100%;
+    padding: 40px 10%;
+    margin: 0px;
+}
+
+nav {
+    display: none;
+}
+
+nav ul {
+    display: inline-block;
+    height: 40px;
+    width: auto;
+}
+
+nav ul.desktop {
+    margin: 20px 0px;
+}
+
+.nav-item {
+    height: 40px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-family: 'Nunito', sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-item+.nav-item {
+    margin-left: 30px;
+}
+
+.nav-item a {
+    color: hsl(42, 70%, 72%);
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    cursor: pointer;
+    color: #eeeeee;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-content: space-between;
+    margin: 0 15%;
+    padding: 0px 0px 20px 0px;
+}
+
+.navbar p a {
+    font-size: 26px;
+    letter-spacing: 1px;
+    color: hsl(42, 70%, 72%);
+    text-decoration: none;
+}
+
+.navbar p a:hover {
+    cursor: pointer;
+    color: #eeeeee;
+}
+
+/* MAIN MISC */
+
+main {
+    padding: 60px 15% 60px 15%;
+    background-image: url("./resources/images/background-sunset.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* TAGLINE & PORTRAIT */
+
+.tagline {
+    padding: 20px 0px;
+    background-color: hsl(208, 3%, 19%);
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+}
+
+.tagline p {
+    margin: 0px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+img.portrait {
+    width: 100%;
+    margin: 0px 0px 40px 0px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* MISSION STATEMENT */
+.mission {
+    background-color: hsl(208, 3%, 19%);
+    border-radius: 10px;
+    padding: 20px 15px;
+}
+
+.mission p {
+    line-height: 1.5em;
+}
+
+/* SERVICES */
+.services-container {
+    margin: 40px 0px 0px 0px;
+    display: grid;
+    justify-content: space-evenly;
+    grid-gap: 20px;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.service-box {
+    display: grid;
+    grid-template: 1fr / 30% 70%;
+    margin: 0px;
+    background-color: hsl(208, 3%, 19%);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.service-box img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.service-desc {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px 10px 10px 20px;
+}
+
+.service-desc h3 {
+    color: hsl(208, 54%, 72%);
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0px 0px 10px 0px;
+}
+
+.service-desc p {
+    font-size: 16px;
+}
+
+.service-box:hover {
+    background-color: hsl(42, 70%, 72%);
+}
+
+.service-box:hover h3 {
+    color: hsl(208, 69%, 59%);
+}
+
+.service-box:hover p {
+    color: hsl(208, 3%, 19%);
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: hsl(208, 3%, 19%);
+    margin: 0px;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+footer p, footer p a {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+footer p.contact-tagline {
+    font-size: 30px;
+    margin-bottom: 20px;
+}

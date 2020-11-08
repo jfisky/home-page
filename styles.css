@@ -224,11 +224,21 @@ footer p.contact-tagline {
 
 /* MOBILE ADJUSTMENTS */
 @media screen and (max-width: 900px), (max-device-width: 900px) {
+    main {
+        padding: 60px 5% 60px 5%;
+    }
+
     .services-container {
         grid-template: 1fr 1fr 1fr 1fr / 1fr;
     }
 
     .service-box {
-        grid-template: 20% 80%;
+        grid-template: auto auto;
+    }
+
+    .service-box img {
+        height: 100%;
+        width: auto;
+        max-height: 300px;
     }
 }

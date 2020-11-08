@@ -7,6 +7,7 @@
 }
 
 body {
+    min-width: 500px;
     margin: 0px;
 }
 
@@ -212,10 +213,19 @@ footer {
 footer p, footer p a {
     font-size: 20px;
     letter-spacing: 2px;
-    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 footer p.contact-tagline {
     font-size: 30px;
     margin-bottom: 20px;
+}
+
+/* MOBILE ADJUSTMENTS */
+@media only screen and (max-width: 900px) {
+    
+
+    .services-container {
+        grid-template: 1fr 1fr 1fr 1fr / 1fr;
+    }
 }
